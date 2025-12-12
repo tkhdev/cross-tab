@@ -1,5 +1,5 @@
 {
-  "name": "cross-tab",
+  "name": "@tkhdev/cross-tab",
   "version": "1.0.0",
   "description": "Minimal, framework-agnostic cross-tab state synchronization using BroadcastChannel API with localStorage fallback",
   "main": "./dist/index.js",
@@ -51,7 +51,7 @@
     "type": "git",
     "url": "https://github.com/tkhdev/cross-tab.git"
   },
-  "homepage": "https://github.com/tkhdev/cross-tab#readme",
+  "homepage": "https://cross-tab.vercel.app/",
   "bugs": {
     "url": "https://github.com/tkhdev/cross-tab/issues"
   },

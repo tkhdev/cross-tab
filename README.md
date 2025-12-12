@@ -2,30 +2,30 @@
 
 > Minimal, framework-agnostic cross-tab state synchronization using BroadcastChannel API with localStorage fallback
 
-[![npm version](https://img.shields.io/npm/v/cross-tab.svg)](https://www.npmjs.com/package/cross-tab)
+[![npm version](https://img.shields.io/npm/v/@tkhdev/cross-tab.svg)](https://www.npmjs.com/package/@tkhdev/cross-tab)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg)](https://www.typescriptlang.org/)
-[![Bundle Size](https://img.shields.io/badge/bundle-8.3KB-green.svg)](https://bundlephobia.com/package/cross-tab)
+[![Bundle Size](https://img.shields.io/badge/bundle-8.3KB-green.svg)](https://bundlephobia.com/package/@tkhdev/cross-tab)
 
 ## 📦 Installation
 
 Install the package using your preferred package manager:
 
 ```bash
-npm install cross-tab
+npm install @tkhdev/cross-tab
 ```
 
 ```bash
-yarn add cross-tab
+yarn add @tkhdev/cross-tab
 ```
 
 ```bash
-pnpm add cross-tab
+pnpm add @tkhdev/cross-tab
 ```
 
 ## 🔗 Links
 
-- **📦 npm**: [https://www.npmjs.com/package/cross-tab](https://www.npmjs.com/package/cross-tab)
+- **📦 npm**: [https://www.npmjs.com/package/@tkhdev/cross-tab](https://www.npmjs.com/package/@tkhdev/cross-tab)
 - **🔗 GitHub**: [https://github.com/tkhdev/cross-tab](https://github.com/tkhdev/cross-tab)
 - **🚀 Live Demo**: [https://cross-tab.vercel.app](https://cross-tab.vercel.app)
 
@@ -64,7 +64,7 @@ pnpm add cross-tab
 ### React (with Hook)
 
 ```tsx
-import { useCrossTabState } from 'cross-tab';
+import { useCrossTabState } from '@tkhdev/cross-tab';
 
 function App() {
   const [theme, setTheme] = useCrossTabState('theme', 'light');
@@ -82,7 +82,7 @@ function App() {
 ### Vanilla JavaScript / Framework Agnostic
 
 ```javascript
-import { createCrossTabChannel } from 'cross-tab';
+import { createCrossTabChannel } from '@tkhdev/cross-tab';
 
 const channel = createCrossTabChannel('theme', 'light');
 
@@ -105,7 +105,7 @@ channel.setValue('dark');
 #### Basic Usage
 
 ```tsx
-import { useCrossTabState } from 'cross-tab';
+import { useCrossTabState } from '@tkhdev/cross-tab';
 
 function Counter() {
   const [count, setCount] = useCrossTabState('counter', 0);
@@ -123,7 +123,7 @@ function Counter() {
 #### With Persistence
 
 ```tsx
-import { useCrossTabState } from 'cross-tab';
+import { useCrossTabState } from '@tkhdev/cross-tab';
 
 function ThemeToggle() {
   const [theme, setTheme] = useCrossTabState('theme', 'light', {
@@ -145,7 +145,7 @@ function ThemeToggle() {
 #### Authentication Synchronization
 
 ```tsx
-import { useCrossTabState } from 'cross-tab';
+import { useCrossTabState } from '@tkhdev/cross-tab';
 
 function AuthProvider({ children }) {
   const [auth, setAuth] = useCrossTabState('auth', null, {
@@ -171,7 +171,7 @@ function AuthProvider({ children }) {
 #### Shopping Cart Synchronization
 
 ```tsx
-import { useCrossTabState } from 'cross-tab';
+import { useCrossTabState } from '@tkhdev/cross-tab';
 
 interface CartItem {
   id: string;
@@ -218,7 +218,7 @@ function ShoppingCart() {
 #### Custom Serialization for Complex Types
 
 ```tsx
-import { useCrossTabState } from 'cross-tab';
+import { useCrossTabState } from '@tkhdev/cross-tab';
 
 interface ComplexState {
   date: Date;
@@ -269,7 +269,7 @@ function ComplexStateDemo() {
 #### Vanilla JavaScript
 
 ```javascript
-import { createCrossTabChannel } from 'cross-tab';
+import { createCrossTabChannel } from '@tkhdev/cross-tab';
 
 // Create a channel
 const themeChannel = createCrossTabChannel('theme', 'light', {
@@ -300,7 +300,7 @@ document.getElementById('dark-mode-btn').addEventListener('click', () => {
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
-import { createCrossTabChannel } from 'cross-tab';
+import { createCrossTabChannel } from '@tkhdev/cross-tab';
 
 const count = ref(0);
 let channel;
@@ -330,7 +330,7 @@ const increment = () => {
 ```svelte
 <script>
   import { onMount, onDestroy } from 'svelte';
-  import { createCrossTabChannel } from 'cross-tab';
+  import { createCrossTabChannel } from '@tkhdev/cross-tab';
   
   let count = 0;
   let channel;
@@ -427,7 +427,7 @@ Returns a channel object with the following methods:
 #### Example
 
 ```typescript
-import { createCrossTabChannel } from 'cross-tab';
+import { createCrossTabChannel } from '@tkhdev/cross-tab';
 
 // Create a channel
 const channel = createCrossTabChannel('cart', []);
@@ -668,7 +668,7 @@ The package handles errors gracefully:
 **A:** Yes! Use `createCrossTabChannel` for non-React contexts:
 
 ```typescript
-import { createCrossTabChannel } from 'cross-tab';
+import { createCrossTabChannel } from '@tkhdev/cross-tab';
 
 const channel = createCrossTabChannel('key', initialValue);
 ```

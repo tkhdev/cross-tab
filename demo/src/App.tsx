@@ -58,7 +58,7 @@ function App() {
                 {theme === 'light' ? 'Dark' : 'Light'} Mode
               </button>
               <a
-                href="https://www.npmjs.com/package/cross-tab"
+                href="https://www.npmjs.com/package/@tkhdev/cross-tab"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-ghost"
@@ -113,10 +113,10 @@ function App() {
           <div className="info-box" style={{ marginTop: '2rem' }}>
             <strong>💡 Installation:</strong>
             <div className="code-block" style={{ marginTop: '1rem', marginBottom: 0 }}>
-              <pre><code><span className="keyword">npm</span> install cross-tab</code></pre>
+              <pre><code><span className="keyword">npm</span> install @tkhdev/cross-tab</code></pre>
             </div>
             <div style={{ marginTop: '0.75rem', display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
-              <a href="https://www.npmjs.com/package/cross-tab" target="_blank" rel="noopener noreferrer" className="badge">
+              <a href="https://www.npmjs.com/package/@tkhdev/cross-tab" target="_blank" rel="noopener noreferrer" className="badge">
                 📦 npm package
               </a>
               <a href="https://github.com/tkhdev/cross-tab" target="_blank" rel="noopener noreferrer" className="badge">
@@ -150,7 +150,7 @@ function App() {
 
           <h3>createCrossTabChannel (Framework Agnostic)</h3>
           <div className="code-block">
-            <pre><code>{`import { createCrossTabChannel } from 'cross-tab';
+            <pre><code>{`import { createCrossTabChannel } from '@tkhdev/cross-tab';
 
 const channel = createCrossTabChannel('key', initialValue, options);
 
@@ -237,7 +237,7 @@ channel.destroy();`}</code></pre>
           </p>
           <div className="footer-links">
             <a
-              href="https://www.npmjs.com/package/cross-tab"
+              href="https://www.npmjs.com/package/@tkhdev/cross-tab"
               target="_blank"
               rel="noopener noreferrer"
               className="footer-link"

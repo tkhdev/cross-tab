@@ -49,7 +49,7 @@ export function useCrossTabState<T>(
     channelRef.current = getChannel(key, initialValue, optionsRef.current);
     setState(channelRef.current.getValue());
     
-    const unsubscribe = channelRef.current.subscribe((value) => {
+    const unsubscribe = channelRef.current.subscribe((value: T) => {
       setState(value);
     });
 

@@ -27,7 +27,7 @@ pnpm add cross-tab
 
 - **📦 npm**: [https://www.npmjs.com/package/cross-tab](https://www.npmjs.com/package/cross-tab)
 - **🔗 GitHub**: [https://github.com/tkhdev/cross-tab](https://github.com/tkhdev/cross-tab)
-- **🚀 Live Demo**: [https://tkhdev-cross-tab.vercel.app](https://tkhdev-cross-tab.vercel.app)
+- **🚀 Live Demo**: [https://cross-tab.vercel.app](https://cross-tab.vercel.app)
 
 ## 📖 Introduction
 

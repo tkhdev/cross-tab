@@ -122,7 +122,7 @@ function App() {
               <a href="https://github.com/tkhdev/cross-tab" target="_blank" rel="noopener noreferrer" className="badge">
                 🔗 GitHub repository
               </a>
-              <a href="https://tkhdev-cross-tab.vercel.app" target="_blank" rel="noopener noreferrer" className="badge">
+              <a href="https://cross-tab.vercel.app" target="_blank" rel="noopener noreferrer" className="badge">
                 🚀 Live Demo
               </a>
             </div>
@@ -253,7 +253,7 @@ channel.destroy();`}</code></pre>
               🔗 GitHub
             </a>
             <a
-              href="https://tkhdev-cross-tab.vercel.app"
+              href="https://cross-tab.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
               className="footer-link"

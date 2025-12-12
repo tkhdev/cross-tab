@@ -1,0 +1,82 @@
+{
+  "name": "cross-tab",
+  "version": "1.0.0",
+  "description": "Minimal, framework-agnostic cross-tab state synchronization using BroadcastChannel API with localStorage fallback",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "test:coverage": "vitest --coverage",
+    "lint": "eslint src tests --ext .ts,.tsx",
+    "type-check": "tsc --noEmit",
+    "demo": "cd demo && npm run dev",
+    "prepublishOnly": "npm run build && npm run type-check"
+  },
+  "keywords": [
+    "cross-tab",
+    "cross-tab-state",
+    "state-sync",
+    "broadcast",
+    "sync",
+    "state",
+    "tabs",
+    "windows",
+    "localStorage",
+    "BroadcastChannel",
+    "synchronization",
+    "framework-agnostic",
+    "react",
+    "vue",
+    "svelte",
+    "vanilla-js"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tkhdev/cross-tab.git"
+  },
+  "homepage": "https://github.com/tkhdev/cross-tab#readme",
+  "bugs": {
+    "url": "https://github.com/tkhdev/cross-tab/issues"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/react-hooks": "^8.0.1",
+    "@types/node": "^20.10.0",
+    "@types/react": "^18.3.27",
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/parser": "^6.13.0",
+    "@vitest/coverage-v8": "^1.6.1",
+    "eslint": "^8.54.0",
+    "jsdom": "^23.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.3.0",
+    "vitest": "^1.6.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
